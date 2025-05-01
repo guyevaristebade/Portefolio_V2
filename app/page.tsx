@@ -8,7 +8,7 @@ export default function Home() {
     <Section className=" flex-1">
       <Hero />
       <Spacing size="sm" />
-      <div className="flex justify-between bg-black">
+      <div className="flex justify-between items-center flex-col md:flex-row  gap-4">
         <Stats title="Years of experiences " value="10" />
         <Stats title="Project completed" value="5" />
         <Stats title="Technologies mastered" value="3" />
