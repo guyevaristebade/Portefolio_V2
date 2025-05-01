@@ -1,18 +1,16 @@
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
+
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import { Anek_Telugu } from "next/font/google";
+import Header from "@/components/Header";
+import Spacing from "@/components/Spacing";
 
-const AnekTelugu = Anek_Telugu({
+const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
-  variable: "--font-caption",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-jetbrainsMono",
 });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
 
 export const metadata: Metadata = {
   title: "Guy BADE . Software Engineer",
@@ -28,12 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full ">
       <body
-        className={cn(
-          GeistSans.variable,
-          AnekTelugu.variable,
-          "font-sans h-full bg-background text-foreground"
-        )}
+        className={cn(jetBrainsMono.variable, "font-sans h-full bg-background")}
       >
+        <Header />
+        <Spacing size="sm" />
         {children}
       </body>
     </html>
