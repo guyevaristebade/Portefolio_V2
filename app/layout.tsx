@@ -30,7 +30,7 @@ export default function RootLayout({
       >
         <Header />
         <Spacing size="sm" />
-        {children}
+        <div className="px-4 md:px-8">{children}</div>
       </body>
     </html>
   );

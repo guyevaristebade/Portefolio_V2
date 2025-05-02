@@ -30,7 +30,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 px-4 shadow-md">
+    <header className="sticky top-0 px-4 shadow-md bg-primary z-50">
       <Section className="flex items-center py-4 justify-between bg-background">
         <Link
           href="/"

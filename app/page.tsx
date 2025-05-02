@@ -5,7 +5,7 @@ import Spacing from "@/components/Spacing";
 
 export default function Home() {
   return (
-    <Section className=" flex-1">
+    <Section className="flex-1">
       <Hero />
       <Spacing size="sm" />
       <div className="flex justify-between items-center flex-col md:flex-row  gap-4">
