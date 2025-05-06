@@ -1,4 +1,5 @@
 import ServiceCard from "@/components/ServiceCard";
+import Spacing from "@/components/Spacing";
 // import Spacing from "@/components/Spacing";
 import React from "react";
 
@@ -32,7 +33,6 @@ const ServicesPage = () => {
 
   return (
     <div>
-      {/* <Spacing size="sm" /> */}
       <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
         {services.map((service) => (
           <ServiceCard
@@ -42,6 +42,7 @@ const ServicesPage = () => {
             description={service.description}
           />
         ))}
+        <Spacing size="md" />
       </div>
     </div>
   );
