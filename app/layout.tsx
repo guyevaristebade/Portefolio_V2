@@ -5,6 +5,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Header from "@/components/Header";
 import Spacing from "@/components/Spacing";
+import Section from "@/components/Section";
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -23,13 +24,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full ">
+    <html lang="en">
       <body
-        className={cn(jetBrainsMono.variable, "font-sans h-full bg-background")}
+        className={cn(
+          jetBrainsMono.variable,
+          "font-sans h-full bg-background flex flex-col"
+        )}
       >
         <Header />
-        <Spacing size="sm" />
-        <div className="px-4 md:px-8">{children}</div>
+        <Spacing size="md" />
+        <Section className="flex-1 max-md:px-8 max-lg:px-8">{children}</Section>
       </body>
     </html>
   );

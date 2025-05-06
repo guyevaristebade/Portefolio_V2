@@ -88,7 +88,7 @@ const Header = () => {
                   buttonVariants({ variant: "outline" }),
                   "cursor-pointer text-black rounded-full bg-accent px-4 py-1 border border-transparent hover:bg-transparent hover:text-white hover:border-accent transition-all duration-300"
                 )}
-                href="#"
+                href="/contact"
               >
                 Hire me
               </Link>
