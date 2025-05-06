@@ -14,8 +14,7 @@ const jetBrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Guy BADE . Software Engineer",
-  description:
-    "Etudiant à la recherche d'une alternance en tant que développeur full-stack",
+  description: "Student seeking an apprenticeship as a full-stack developer",
 };
 
 export default function RootLayout({

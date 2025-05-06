@@ -11,15 +11,15 @@ const Hero = () => {
   return (
     <Section className="flex justify-between  md:flex-row flex-col-reverse items-center gap-8">
       <div className="flex flex-col gap-4 justify-center md:gap-4 text-center lg:text-left xl:text-left">
-        <span className="text-xl text-white/80">
-          {"À La recherche d'une alternance"}
+        <span className="text-md text-white/80">
+          {"Looking for an apprenticeship"}
         </span>
         <h1 className="text-5xl font-bold leading-tight ">
-          Bonjour, Je suis <br /> <span className="text-accent">Guy BADE</span>
+          {"Hello I'm"} <br /> <span className="text-accent">Guy BADE</span>
         </h1>
         <p className="max-w-[500px] text-md font-light mx-auto text-white/80">
           {
-            "Actuellement titulaire d’un Bac +3, je suis à la recherche d'une alternance de deux ans dans le but d'intégrer un master en conception de système et cybersécurité. ou une école d'ingénieur."
+            "Currently holding a Bachelor's degree (Bac +3), I am seeking a two-year apprenticeship to pursue a Master's degree in system design and cybersecurity or to join an engineering school."
           }
         </p>
         <div className="flex gap-4 max-md:justify-center">
@@ -57,14 +57,15 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="flex justify-center rounded-full">
+      <div className="flex justify-center">
         <Image
           src={"/avatar.png"}
           alt="Guy BADE"
-          className="w-full h-auto rounded max-w-xs"
+          className="w-full h-auto rounded-full max-w-xs relative z-10"
           width={400}
-          height={500}
+          height={400}
         />
+        {/* <div className="absolute inset-0 rounded-full border-2 border-dashed border-accent animate-spin-slow"></div> */}
       </div>
     </Section>
   );

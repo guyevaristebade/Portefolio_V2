@@ -11,7 +11,7 @@ export default function Home() {
     },
     {
       title: "Projects completed",
-      value: "3",
+      value: "8",
     },
     {
       title: "Technologies mastered",
