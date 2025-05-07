@@ -1,16 +1,19 @@
 import React from "react";
 import GithubIcons from "./icons/GithubIcons";
+import NextJSIcons from "./icons/NextJSIcons";
+import TailwindIcons from "./icons/TailwindIcon";
+import PostgreIcon from "./icons/PostgreIcon";
+import TypescriptIcon from "./icons/TypescriptIcon";
+import JavaIcon from "./icons/JavaIcon";
 
 const Skills = () => {
   const skills = [
-    <GithubIcons key="github" />,
-    <GithubIcons key="github-2" />,
-    <GithubIcons key="github-3" />,
-    <GithubIcons key="github-4" />,
-    <GithubIcons key="github-5" />,
-    <GithubIcons key="github-6" />,
-    <GithubIcons key="github-7" />,
-    <GithubIcons key="github-8" />,
+    <GithubIcons key="github" size={100} />,
+    <NextJSIcons key="nextjs" size={100} />,
+    <TailwindIcons key="tailwind" size={100} />,
+    <PostgreIcon key="postgres" size={100} />,
+    <TypescriptIcon key="typescript" size={100} />,
+    <JavaIcon key="java" size={100} />,
   ];
   return (
     <div className="flex flex-col gap-8">
