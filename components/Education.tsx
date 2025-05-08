@@ -42,7 +42,7 @@ const Education = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore officia
         placeat .
       </p>
-      <div className="grid grid-cols-2 gap-6 md:grid-cols-2 max-h-[400px] overflow-auto">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 max-h-[400px] overflow-auto">
         {educations.map((education, index) => (
           <EducationCard
             key={index}

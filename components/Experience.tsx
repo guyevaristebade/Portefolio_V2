@@ -37,13 +37,13 @@ const Experience = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 ">
       <h2 className="text-2xl text-center md:text-start">My experience</h2>
       <p className="text-sm text-white/80 text-center md:text-start">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore officia
         placeat .
       </p>
-      <div className="grid grid-cols-2 gap-6 md:grid-cols-2 max-h-[400px] overflow-auto">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 max-h-[400px] overflow-auto">
         {experiences.map((experience, index) => (
           <ExperienceCard
             key={index}
