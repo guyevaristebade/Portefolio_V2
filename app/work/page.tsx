@@ -1,6 +1,7 @@
 "use client";
 import GithubIcons from "@/components/icons/GithubIcons";
 import Section from "@/components/Section";
+import Spacing from "@/components/Spacing";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight, MoveUpRight } from "lucide-react";
@@ -59,7 +60,7 @@ const WorkPage = () => {
     <Section>
       <div className="flex flex-col-reverse lg:flex-row justify-between gap-4">
         <div className="flex flex-col justify-between lg:w-1/2">
-          <div className="flex flex-col justify-between gap-8 border-b border-white/10">
+          <div className="flex flex-col justify-between gap-8  border-white/10">
             <h2 className="text-8xl text-outline text-transparent">
               {works[index].num}
             </h2>
@@ -129,6 +130,7 @@ const WorkPage = () => {
           </Button>
         </div>
       </div>
+      <Spacing size="md" />
     </Section>
   );
 };
