@@ -2,6 +2,7 @@
 import GithubIcons from "@/components/icons/GithubIcons";
 import Section from "@/components/Section";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight, MoveUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,7 +17,7 @@ const WorkPage = () => {
         "lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem, ipsum dolor.",
       image: "/work1.png",
       site_link: "https://example.com/work1",
-      code_link: "https://github.com/example/work1",
+      code_link: "https://github/work1",
       tags: ["Html", "CSS 3", "JavaScript"],
     },
     {
@@ -55,10 +56,10 @@ const WorkPage = () => {
   };
 
   return (
-    <Section className="relative">
+    <Section>
       <div className="flex flex-col-reverse lg:flex-row justify-between gap-4">
         <div className="flex flex-col justify-between lg:w-1/2">
-          <div className="flex flex-col justify-between gap-8 border-b border-white/10 pb-4">
+          <div className="flex flex-col justify-between gap-8 border-b border-white/10">
             <h2 className="text-8xl text-outline text-transparent">
               {works[index].num}
             </h2>
@@ -75,32 +76,31 @@ const WorkPage = () => {
               ))}
             </div>
           </div>
+          <div className="h-0.5 bg-white/10 my-3"></div>
           <div className="flex gap-2">
             <Link
               href={works[index].site_link}
               target="_blank"
-              className="bg-[#333] rounded-full h-10 w-10 text-md text-white hover:text-accent flex justify-center items-center"
+              className={cn(
+                "bg-[#333] rounded-[100%] p-4 text-md text-white hover:text-accent flex justify-center items-center transition-all duration-300",
+                !works[index].site_link && "opacity-50 pointer-events-none"
+              )}
             >
               <MoveUpRight size={20} />
             </Link>
             <Link
               href={works[index].code_link}
               target="_blank"
-              className="bg-[#333] rounded-[100%] h-10 w-10 text-md text-white hover:text-accent flex justify-center items-center"
+              className={cn(
+                "bg-[#333] rounded-[100%] p-4 text-md text-white hover:text-accent flex justify-center items-center transition-all duration-300",
+                !works[index].code_link && "opacity-50 pointer-events-none"
+              )}
             >
               <GithubIcons size={20} />
             </Link>
           </div>
         </div>
-        {/* <div className="relative w-full lg:w-1/2">
-          <Image
-            src={works[index].image}
-            alt={"work image"}
-            width={500}
-            height={500}
-            className="w-full h-full object-cover"
-          />
-        </div> */}
+
         <div className="relative w-full lg:w-1/2 flex items-center justify-center">
           <Image
             src={works[index].image}
@@ -129,20 +129,6 @@ const WorkPage = () => {
           </Button>
         </div>
       </div>
-      {/* <div className="flex w-full gap-2 justify-between md:justify-end absolute md:static top-[120px]">
-        <Button
-          className="bg-accent rounded-none text-md text-black hover:text-white hover:border hover:border-accent"
-          onClick={handlePrev}
-        >
-          <ChevronLeft />
-        </Button>
-        <Button
-          className="bg-accent rounded-none  text-black hover:text-white hover:border hover:border-accent flex-end"
-          onClick={handleNext}
-        >
-          <ChevronRight />
-        </Button>
-      </div> */}
     </Section>
   );
 };
