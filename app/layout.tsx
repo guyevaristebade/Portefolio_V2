@@ -5,8 +5,6 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Header from "@/components/Header";
 import Spacing from "@/components/Spacing";
-import Section from "@/components/Section";
-import AnimeComponent from "@/components/AnimeComponent";
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -34,9 +32,7 @@ export default function RootLayout({
       >
         <Header />
         <Spacing size="md" />
-        <Section className="flex-1 max-md:px-8 max-lg:px-8">
-          <AnimeComponent>{children}</AnimeComponent>
-        </Section>
+        <div className="flex-1 max-md:px-8 max-lg:px-8">{children}</div>
       </body>
     </html>
   );

@@ -3,6 +3,13 @@ import Spacing from "@/components/Spacing";
 // import Spacing from "@/components/Spacing";
 import React from "react";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Services",
+  description: "Discover the services I offer in web development",
+};
+
 const ServicesPage = () => {
   const services = [
     {

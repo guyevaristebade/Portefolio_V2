@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import React, { useState } from "react";
 import Skills from "@/components/Skills";
 import AboutMe from "@/components/AboutMe";
+import Section from "@/components/Section";
 
 const ResumePage = () => {
   const [onglet, setOnglet] = useState<string>("experience");
@@ -15,7 +16,7 @@ const ResumePage = () => {
     setOnglet(onglet);
   };
   return (
-    <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
+    <Section className="grid grid-cols-1 gap-10 md:grid-cols-3">
       <div className="flex flex-col justify-center md:justify-start gap-10 col-span-1 ">
         <h1 className="text-3xl text-center md:text-start">Why hire me?</h1>
         <p className="text-sm text-white/80 text-center md:text-start">
@@ -67,7 +68,7 @@ const ResumePage = () => {
         {onglet === "about-me" && <AboutMe />}
       </div>
       <Spacing size="md" />
-    </div>
+    </Section>
   );
 };
 

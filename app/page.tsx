@@ -1,6 +1,7 @@
 import Stats from "@/components/Stats";
 import Hero from "../components/Hero";
 import Spacing from "@/components/Spacing";
+import Section from "@/components/Section";
 
 export default function Home() {
   const statsData = [
@@ -23,7 +24,7 @@ export default function Home() {
   ];
 
   return (
-    <div>
+    <Section>
       <Hero />
       <Spacing size="sm" />
       <div className="flex justify-between items-center flex-col md:flex-row gap-4">
@@ -32,6 +33,6 @@ export default function Home() {
         ))}
       </div>
       <Spacing size="md" />
-    </div>
+    </Section>
   );
 }
