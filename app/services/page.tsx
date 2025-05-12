@@ -4,6 +4,7 @@ import Spacing from "@/components/Spacing";
 import React from "react";
 
 import { Metadata } from "next";
+import Section from "@/components/Section";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -39,7 +40,7 @@ const ServicesPage = () => {
   ];
 
   return (
-    <div>
+    <Section>
       <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
         {services.map((service) => (
           <ServiceCard
@@ -51,7 +52,7 @@ const ServicesPage = () => {
         ))}
         <Spacing size="md" />
       </div>
-    </div>
+    </Section>
   );
 };
 

@@ -42,7 +42,7 @@ const WorkPage = () => {
       tags: ["Next JS ", "Tailwind css"],
     },
   ];
-  const [index, setIndex] = useState<number>(works.length - 1);
+  const [index, setIndex] = useState<number>(0);
 
   const handleNext = () => {
     if (index < works.length - 1) {
@@ -57,7 +57,7 @@ const WorkPage = () => {
   };
 
   return (
-    <Section>
+    <Section className="h-">
       <div className="flex flex-col-reverse lg:flex-row justify-between gap-4">
         <div className="flex flex-col justify-between lg:w-1/2">
           <div className="flex flex-col justify-between gap-8  border-white/10">
