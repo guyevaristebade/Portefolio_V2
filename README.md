@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Guy BADE
 
-## Getting Started
+<img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&amp;logo=next.js&amp;logoColor=white">
+<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&amp;logo=typescript&amp;logoColor=white">
+<img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&amp;logo=tailwind-css&amp;logoColor=white">
+<img alt="shadcn/ui" src="https://img.shields.io/badge/shadcn/ui-000000?style=for-the-badge&amp;logo=shadcnui&amp;logoColor=white">
 
-First, run the development server:
+## 📋 Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Ce projet est un projet qui fait parti d'une serie de projets qui à pour but l'amélioration de mes compétences et la construction d'un portefolio personnel.
+
+## 🛠️ Technologies utilisées
+
+Frontend
+
+- Next.js - Framework React avec rendu côté serveur et génération de sites statiques
+- TypeScript - Superset JavaScript avec typage statique
+- Tailwind CSS - Framework CSS utilitaire pour un développement rapide
+  shadcn/ui - Collection de composants UI réutilisables
+
+Bibliothèques supplémentaires
+
+- Lucide Icons - Collection d'icônes open-source
+- JetBrains Mono - Police optimisée pour la programmation
+- Google Fonts - Bibliothèque de polices web
+
+## ✨ Fonctionnalités
+
+- Design responsive - Adapté à tous les appareils (mobile, tablette, desktop)
+- Navigation intuitive - Menu hamburger sur mobile, navigation standard sur desktop
+- Présentation des projets - Carrousel interactif avec navigation entre les projets
+<!-- Informations personnelles - Section "À propos" avec détails professionnels
+Optimisation SEO - Métadonnées personnalisables pour chaque page
+Performances optimisées - Utilisation des fonctionnalités avancées de Next.js -->
+
+```js
+# Cloner le dépôt
+git clone https://github.com/guyevaristebade/Portefolio_V2
+
+# Accéder au répertoire
+cd portfolio_v2
+
+# Installer les dépendances
+pnpm install
+
+# Lancer en mode développement
+pnpm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```js
+portfolio-v2/
+├── app/                # Routage et pages Next.js
+│   ├── globals.css     # Styles globaux
+│   ├── layout.tsx      # Layout principal
+│   ├── page.tsx        # Page d'accueil
+│   └── work/           # Section des projets
+├── components/         # Composants réutilisables
+│   ├── AboutMe.tsx     # Composant "À propos"
+│   ├── Header.tsx      # Barre de navigation
+│   └── icons/          # Composants d'icônes
+├── lib/                # Utilitaires et helpers
+│   └── utils.ts        # Fonctions utilitaires
+└── public/             # Fichiers statiques (images, etc.)
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📝 Ce que j'ai appris
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Architecture d'applications avec Next.js App Router
+- Conception de composants React réutilisables avec TypeScript
+- Mise en œuvre de designs responsive avec Tailwind CSS
+- Gestion d'état local avec React Hooks
 
-## Learn More
+## 📧 Contact
 
-To learn more about Next.js, take a look at the following resources:
+Guy BADE - [badeguyevariste@gmail.com]
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 Licence
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Ce projet est sous licence MIT.

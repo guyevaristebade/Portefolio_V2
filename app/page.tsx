@@ -7,7 +7,7 @@ export default function Home() {
   const statsData = [
     {
       title: "Years of experience",
-      value: "1",
+      value: "1+",
     },
     {
       title: "Projects completed",

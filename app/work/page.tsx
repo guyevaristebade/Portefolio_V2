@@ -83,7 +83,7 @@ const WorkPage = () => {
               href={works[index].site_link}
               target="_blank"
               className={cn(
-                "bg-[#333] rounded-[100%] p-4 text-md text-white hover:text-accent flex justify-center items-center transition-all duration-300",
+                "bg-secondary rounded-[100%] p-4 text-md text-white hover:text-accent flex justify-center items-center transition-all duration-300",
                 !works[index].site_link && "opacity-50 pointer-events-none"
               )}
             >
@@ -93,7 +93,7 @@ const WorkPage = () => {
               href={works[index].code_link}
               target="_blank"
               className={cn(
-                "bg-[#333] rounded-[100%] p-4 text-md text-white hover:text-accent flex justify-center items-center transition-all duration-300",
+                "bg-secondary rounded-[100%] p-4 text-md text-white hover:text-accent flex justify-center items-center transition-all duration-300",
                 !works[index].code_link && "opacity-50 pointer-events-none"
               )}
             >

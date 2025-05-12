@@ -1,10 +1,8 @@
-import ServiceCard from "@/components/ServiceCard";
-import Spacing from "@/components/Spacing";
-// import Spacing from "@/components/Spacing";
 import React from "react";
-
 import { Metadata } from "next";
+import Spacing from "@/components/Spacing";
 import Section from "@/components/Section";
+import ServiceCard from "@/components/ServiceCard";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -27,7 +25,7 @@ const ServicesPage = () => {
     },
     {
       num: "03",
-      title: "Lgo Design",
+      title: "Logo Design",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, sit. ",
     },

@@ -26,7 +26,7 @@ const ResumePage = () => {
           <Button
             onClick={() => handleOngletChange("experience")}
             className={cn(
-              "bg-[#333] rounded-[5px] hover:text-white duration-500",
+              "bg-secondary rounded-sm hover:text-white duration-500",
               onglet === "experience" && "bg-accent text-black"
             )}
           >
@@ -35,7 +35,7 @@ const ResumePage = () => {
           <Button
             onClick={() => handleOngletChange("education")}
             className={cn(
-              "bg-[#333] rounded-[5px] hover:text-white duration-500",
+              "bg-secondary rounded-sm hover:text-white duration-500",
               onglet === "education" && "bg-accent text-black"
             )}
           >
@@ -44,7 +44,7 @@ const ResumePage = () => {
           <Button
             onClick={() => handleOngletChange("skills")}
             className={cn(
-              "bg-[#333] rounded-[5px] hover:text-white duration-500",
+              "bg-secondary rounded-sm hover:text-white duration-500",
               onglet === "skills" && "bg-accent text-black"
             )}
           >
@@ -53,7 +53,7 @@ const ResumePage = () => {
           <Button
             onClick={() => handleOngletChange("about-me")}
             className={cn(
-              "bg-[#333] rounded-[5px] hover:text-white duration-500",
+              "bg-secondary rounded-sm hover:text-white duration-500",
               onglet === "about-me" && "bg-accent text-black"
             )}
           >

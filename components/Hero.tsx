@@ -22,7 +22,7 @@ const Hero = () => {
             "Currently holding a Bachelor's degree (Bac +3), I am seeking a two-year apprenticeship to pursue a Master's degree in system design and cybersecurity or to join an engineering school."
           }
         </p>
-        <div className="flex gap-4 max-md:justify-center">
+        <div className="flex gap-4 max-md:justify-center items-center">
           <Link
             href="#"
             className={cn(

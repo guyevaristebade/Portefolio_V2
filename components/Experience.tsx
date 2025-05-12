@@ -38,7 +38,7 @@ const Experience = () => {
 
   return (
     <div className="flex flex-col gap-8 ">
-      <h2 className="text-2xl text-center md:text-start">My experience</h2>
+      <h2 className="text-2xl text-center md:text-start">My experiences</h2>
       <p className="text-sm text-white/80 text-center md:text-start">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore officia
         placeat .

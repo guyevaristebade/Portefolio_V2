@@ -3,7 +3,7 @@ import React from "react";
 const AboutMe = () => {
   return (
     <div className="flex flex-col gap-8 ">
-      <h2 className="text-2xl text-center md:text-start">About Me</h2>
+      <h2 className="text-2xl text-center md:text-start">About me</h2>
       <p className="text-white/80 text-sm text-center md:text-start">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem, ipsum.
       </p>

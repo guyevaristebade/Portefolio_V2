@@ -15,6 +15,7 @@ import JavaIcon from "./icons/JavaIcon";
 import NodejsIcon from "./icons/NodejsIcon";
 import ReactIcon from "./icons/ReactIcon";
 import HTMLIcons from "./icons/HTMLIcons";
+import NestjsIcon from "./icons/NestjsIcon";
 
 const Skills = () => {
   const skills = [
@@ -27,6 +28,7 @@ const Skills = () => {
     { icon: <TypescriptIcon size={60} />, label: "TypeScript" },
     { icon: <JavaIcon size={60} />, label: "Java" },
     { icon: <NodejsIcon size={60} />, label: "Node.js" },
+    { icon: <NestjsIcon size={60} />, label: "Nest JS" },
   ];
 
   return (
